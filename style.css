@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #e9ecef;
+    padding-top: 70px;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ปรับขนาดรูปภาพ */
+.profile-img {
+    width: 165px;  /* ขยายให้ใหญ่ขึ้น 10% จากขนาดเดิม */
+    height: 165px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 4px solid #495057;
+}
+
+/* ปรับแต่งลิงค์เริ่มต้น */
+.link {
+    color: #000; /* ไม่มีสีเริ่มต้น */
+    text-decoration: none; /* ลบเส้นขีดใต้ */
+    border: 2px solid transparent; /* ไม่มีกรอบเริ่มต้น */
+    padding: 5px;
+    transition: all 0.3s ease; /* การเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+/* เมื่อเมาส์เข้าใกล้ */
+.link:hover {
+    color: #007bff; /* เปลี่ยนสีเมื่อวางเมาส์ */
+    border-color: #007bff; /* เพิ่มกรอบสีเมื่อวางเมาส์ */
+    border-radius: 4px; /* มุมกรอบมน */
+}
+
+
+/* เพิ่มระยะห่างบรรทัดและทำให้ข้อความอ่านง่าย */
+p {
+    line-height: 1.8; /* เพิ่มระยะห่างของบรรทัด */
+    font-size: 1.1rem; /* ขนาดตัวอักษรที่เหมาะสม */
+    color: #333; /* ตัวอักษรสีเข้ม */
+    padding: 15px; /* ระยะห่างรอบข้อความ */
+    border-radius: 8px; /* มุมมนให้ข้อความ */
+}
+
+/* Section Headers */
+h2 {
+    color: #495057;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* Contact Section */
+#contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+#contact ul li:before {
+    content: '• ';
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* ปรับขนาดและระยะห่างตัวอักษรใน Navbar */
+.navbar {
+    background-image: url('BG.jpg'); /* ใส่ path ของรูปพื้นหลัง */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* จัดปุ่มให้กระจายออก */
+    align-items: center; /* จัดตำแหน่งให้ปุ่มอยู่กลาง */
+}
+
+/* ปรับให้ Navbar มีการจัดระเบียบให้พอดี */
+.navbar-nav {
+    display: flex;
+    justify-content: space-around; /* จัดให้ปุ่มทั้งหมดห่างกัน */
+    width: 100%; /* ใช้พื้นที่ทั้งหมดใน Navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1rem;
+    padding: 10px 20px; /* เพิ่มระยะห่างให้ปุ่ม */
+    text-align: center;
+    flex: 1; /* ปรับขนาดปุ่มให้พอดีกับพื้นที่ */
+}
+
+/* ปรับขนาด Navbar สำหรับจอเล็ก */
+.navbar-nav {
+    flex-grow: 1;
+    text-align: center; /* จัดเรียงไอเท็มให้กึ่งกลาง */
+}
+
+.navbar-brand {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+/* เพิ่มเส้นแบ่งเวลาเมาส์เข้าใกล้ */
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* เปลี่ยนสีเมื่อนำเมาส์ไปวาง */
+    background-color: #f8f9fa; /* เปลี่ยนสีพื้นหลัง */
+    border-radius: 5px; /* มุมมนให้ดูสวย */
+}
+
+/* ปรับขนาดของ navbar ในหน้าจอเล็ก */
+.navbar-nav li {
+    margin-left: 15px;
+}
+
+/* ปรับให้ Hamburger Icon เด่นขึ้นเมื่ออยู่บนหน้าจอเล็ก */
+.navbar-toggler {
+    border-color: white;
+}
+
+/* เปลี่ยนสีเมื่อ hover */
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+/* กำหนดปุ่ม Hamburger (สามขีด) ให้เห็นได้ชัด */
+.navbar-toggler {
+    border-color: white;
+}
+
+/* ปรับขนาด Hamburger Icon */
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+/* เพิ่มระยะห่างระหว่างรายการเมนู */
+.navbar-nav li {
+    margin-left: 15px;
+}
+
+/* ปรับตำแหน่ง navbar links ให้ชิดขวา */
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* เพิ่มระยะห่างระหว่างรายการเมื่ออยู่บนหน้าจอขนาดเล็ก */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-top: 10px;
+    }
+}
+
+/* ปรับขนาดของ navbar ในหน้าจอเล็ก */
+@media (max-width: 767px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* CSS สำหรับกรอบของ GitHub Link */
+.github-link {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #000000;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* การเปลี่ยนแปลงเมื่อเม้าส์เข้าใกล้ */
+.github-link:hover {
+    border-color: #007bff;
+}
+
+/* กำหนดขนาดของรูปภาพ @ */
+.at-symbol {
+    width: 15px; /* ขนาดที่เหมาะสม */
+    height: auto;
+    margin: 0 5px; /* เพิ่มช่องว่างระหว่าง @ กับข้อความ */
+}
+
