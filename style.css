@@ -136,9 +136,22 @@ h2 {
     margin-left: 15px;
 }
 
-/* ปรับให้ Hamburger Icon เด่นขึ้นเมื่ออยู่บนหน้าจอเล็ก */
+/* กำหนดปุ่ม Hamburger (สามขีด) ให้เห็นได้ชัด */
 .navbar-toggler {
-    border-color: black;
+    border-color: white; /* ให้ขอบปุ่มเป็นสีขาว */
+}
+
+/* เปลี่ยนสีเมื่อ hover */
+.navbar-toggler-icon {
+    background-color: white; /* เปลี่ยนสีไอคอนให้เป็นสีขาว */
+    border-radius: 50%; /* ทำให้ไอคอนมีมุมมน */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้กับไอคอน */
+}
+
+/* เพิ่มความชัดเจนเมื่อปุ่ม Hamburger ถูกคลิก */
+.navbar-toggler:focus .navbar-toggler-icon {
+    outline: none; /* ลบขอบที่เป็นเส้นจากการคลิก */
+    background-color: #007bff; /* เปลี่ยนสีพื้นหลังของไอคอนเมื่อคลิก */
 }
 
 /* เปลี่ยนสีเมื่อ hover */
