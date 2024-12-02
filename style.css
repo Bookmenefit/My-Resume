@@ -138,23 +138,13 @@ h2 {
 
 /* ปรับให้ Hamburger Icon เด่นขึ้นเมื่ออยู่บนหน้าจอเล็ก */
 .navbar-toggler {
-    border-color: white;
+    border-color: black;
 }
 
 /* เปลี่ยนสีเมื่อ hover */
 .navbar-nav .nav-link:hover {
     color: #007bff !important;
-}
-
-/* กำหนดปุ่ม Hamburger (สามขีด) ให้เห็นได้ชัด */
-.navbar-toggler {
-    border-color: white;
-}
-
-/* ปรับขนาด Hamburger Icon */
-.navbar-toggler-icon {
-    background-color: white;
-}
+}
 
 /* เพิ่มระยะห่างระหว่างรายการเมนู */
 .navbar-nav li {
