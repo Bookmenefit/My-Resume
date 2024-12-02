@@ -143,8 +143,7 @@ h2 {
 
 /* เปลี่ยนสีเมื่อ hover */
 .navbar-toggler-icon {
-    background-color: white; /* เปลี่ยนสีไอคอนให้เป็นสีขาว */
-    border-radius: 50%; /* ทำให้ไอคอนมีมุมมน */
+    background-color: black; /* เปลี่ยนสีไอคอนให้เป็นสีขาว */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* เพิ่มเงาให้กับไอคอน */
 }
 
